@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Minuman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Kedai Six Garage</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="makanan.html">Makanan</a></li>
+            <li><a href="about.html">Tentang</a></li>
+        </ul>
+
+        <div class="nav-right">
+    <button id="darkMode">
+🌙
+</button>
+    <button id="cartButton">
+🛒
+<span id="cart-count">0</span>
+</button>
+</div>
+
+    </nav>
+</header>
+
+<section id="produk">
+
+    <h2>🥤 Menu Minuman</h2>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="img/matchalatte.jpeg">
+            <h3>Matcha Latte</h3>
+            <p class="price">Rp15.000</p>
+            <button onclick="addCart('Matcha Latte',15000)">Tambah</button>
+            <button onclick="buyNow('Matcha Latte',15000)">Beli</button>
+        </div>
+
+        <div class="card">
+            <img src="img/chocolate.jpeg">
+            <h3>Chocolate Milk</h3>
+            <p class="price">Rp13.000</p>
+            <button onclick="addCart('Chocolate Milk',13000)">Tambah</button>
+            <button onclick="buyNow('Chocolate Milk',13000)">Beli</button>
+        </div>
+
+        <div class="card">
+            <img src="img/greentea.jpg">
+            <h3>Green Tea</h3>
+            <p class="price">Rp10.000</p>
+            <button onclick="addCart('Green Tea',10000)">Tambah</button>
+            <button onclick="buyNow('Green Tea',10000)">Beli</button>
+        </div>
+
+        <div class="card">
+            <img src="img/lemontea.jpg">
+            <h3>Lemon Tea</h3>
+            <p class="price">Rp7.000</p>
+            <button onclick="addCart('Lemon Tea',7000)">Tambah</button>
+            <button onclick="buyNow('Lemon Tea',7000)">Beli</button>
+        </div>
+
+        <div class="card">
+            <img src="img/jusalpukat.jpg">
+            <h3>Jus Alpukat</h3>
+            <p class="price">Rp6.000</p>
+            <button onclick="addCart('Jus Alpukat',6000)">Tambah</button>
+            <button onclick="buyNow('Jus Alpukat',6000)">Beli</button>
+        </div>
+
+        <div class="card">
+            <img src="img/esjeruk.jpg">
+            <h3>Es Jeruk</h3>
+            <p class="price">Rp5.000</p>
+            <button onclick="addCart('Es Jeruk',5000)">Tambah</button>
+            <button onclick="buyNow('Es Jeruk',5000)">Beli</button>
+        </div>
+
+    </div>
+    <div id="cart">
+
+<h2>Keranjang</h2>
+
+<div id="cartItems">
+
+Belum ada produk
+
+</div>
+
+<div class="cart-total">
+
+Total :
+
+Rp<span id="totalHarga">0</span>
+
+</div>
+
+<button onclick="checkoutWA()">
+    Checkout
+</button>
+
+
+</section>
+<section id="tentang">
+    <a href="about.html">
+        <button>Tentang Kami</button>
+    </a>
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>

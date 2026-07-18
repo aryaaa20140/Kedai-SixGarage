@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tentang Kami</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+Kedai Six Garage
+
+</div>
+
+<ul>
+
+    <div class="nav-right">
+    <button id="darkMode">
+🌙
+</button>
+
+    <button id="cartButton">
+🛒
+<span id="cart-count">0</span>
+</button>
+
+</div>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="makanan.html">Makanan</a></li>
+
+<li><a href="minuman.html">Minuman</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section id="about">
+
+<div class="about-box">
+
+<h1>Kedai Six Garage</h1>
+
+<p>
+
+Kami menyediakan makanan dan minuman berkualitas dengan harga terjangkau.
+
+</p>
+
+<br>
+
+<h2>📍 Alamat</h2>
+
+<p>
+
+Kediri, Jawa Timur
+
+</p>
+
+<br>
+
+<h2>📱 WhatsApp</h2>
+
+<p>
+
+6282326973449
+
+</p>
+
+<br>
+
+<div class="qris-box">
+    <h2>Scan QRIS</h2>
+<img src="img/qris.png" class="qris">
+
+<p>
+
+Silahkan Scan Qris di atas untuk melakukan pembayaran
+
+</p>
+
+</div>
+
+
+<br><br>
+
+<button onclick="openWA()">
+
+Hubungi Kami
+
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>
+
+© Kedai Six Garage 2026
+
+</h3>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+<section id="tentang">
+
+<h2>Tentang Kami</h2>
+
+<p>
+
+ Kedai Six Garage menyediakan berbagai Makanan dan Minuman yang enak.
+
+</p>
+
+</section>
+
+<section id="kontak">
+
+<h2>Hubungi Kami</h2>
+
+<p>
+
+WhatsApp :
+<span id="nomorWA">
+6282326973449
+</span>
+
+</p>
+
+<button onclick="openWA()">
+
+Chat WhatsApp
+
+</button>
+
+</section>
+
+<div id="cart">
+
+<h2>Keranjang</h2>
+
+<div id="cartItems">
+
+Belum ada produk
+
+</div>
+
+<div class="cart-total">
+
+Total :
+
+Rp<span id="totalHarga">0</span>
+
+</div>
+
+<button onclick="checkoutWA()">
+
+Checkout WhatsApp
+
+</button>
+
+<button onclick="showQRIS()">
+
+Bayar QRIS
+
+</button>
+
+</div>
+
+<div id="popupQRIS">
+
+<div class="popup-content">
+
+<span onclick="closeQRIS()">
+
+✖
+
+</span>
+
+<h2>
+
+Scan QRIS
+
+</h2>
+
+<img src="img/qris.png">
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>
+
+Kedai Six Garage
+
+</h3>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

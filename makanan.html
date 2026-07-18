@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Menu Makanan</title>
+
+<link rel="stylesheet"
+ href="style.css">
+
+ 
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+Kedai Six Garage
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="minuman.html">Minuman</a></li>
+
+<li><a href="about.html">Tentang</a></li>
+
+</ul>
+<div class="nav-right">
+    <button id="darkMode">
+🌙
+</button>
+    <button id="cartButton">
+    🛒
+    <span id="cart-count">0</span>
+</button>
+
+    
+</div>
+
+</nav>
+
+</header>
+
+<section id="produk">
+
+<h2>🍔 Menu Makanan</h2>
+
+<div class="product-grid">
+
+<div class="card">
+    <img src="img/nasigorengspesial.png">
+
+    <h3>Nasi Goreng Spesial</h3>
+
+    <p class="price">Rp18.000</p>
+
+    <button onclick="addCart('Nasi Goreng Spesial',18000)">
+        Tambah
+    </button>
+
+    <button onclick="buyNow('Nasi Goreng Spesial',18000)">
+        Beli
+    </button>
+</div>
+
+<div class="card">
+    <img src="img/miegoreng.png">
+
+    <h3>Mie Goreng</h3>
+
+    <p class="price">Rp7.000</p>
+
+    <button onclick="addCart('Mie Goreng',7000)">
+        Tambah
+    </button>
+
+    <button onclick="buyNow('Mie Goreng',7000)">
+        Beli
+    </button>
+</div>
+
+<div class="card">
+    <img src="img/ayamgeprek.png">
+
+    <h3>Ayam Geprek</h3>
+
+    <p class="price">Rp15.000</p>
+
+    <button onclick="addCart('Ayam Geprek',15000)">
+        Tambah
+    </button>
+
+    <button onclick="buyNow('Ayam Geprek',15000)">
+        Beli
+    </button>
+</div>
+
+<div class="card">
+    <img src="img/nasipadang.png">
+
+    <h3>Nasi Padang</h3>
+
+    <p class="price">Rp22.000</p>
+
+    <button onclick="addCart('Nasi Padang',22000)">
+        Tambah
+    </button>
+
+    <button onclick="buyNow('Nasi Padang',22000)">
+        Beli
+    </button>
+</div>
+
+<div class="card">
+    <img src="img/nasirendang.png">
+
+    <h3>Nasi Rendang</h3>
+
+    <p class="price">Rp16.000</p>
+
+    <button onclick="addCart('Nasi Rendang',16000)">
+        Tambah
+    </button>
+
+    <button onclick="buyNow( 'Nasi Rendang',16000)">
+        Beli
+    </button>
+</div>
+
+<div class="card">
+    <img src="img/sotoayam.png">
+
+    <h3>Soto Ayam</h3>
+
+    <p class="price">Rp18.000</p>
+
+    <button onclick="addCart('Soto Ayam',10000)">
+        Tambah
+    </button>
+
+    <button onclick="buyNow('Soto Ayam',10000)">
+        Beli
+    </button>
+</div>
+
+<div class="card">
+
+<img src="img/nasigorengtelur.png">
+
+<h3>Nasi Goreng Telur</h3>
+
+<p class="price">
+Rp10.000
+</p>
+
+<button onclick="addCart('Nasi Goreng Telur',10000)">
+Tambah
+</button>
+
+<button onclick="buyNow('Nasi Goreng Telur',10000)">
+Beli
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="img/nasitumpang.png">
+
+<h3>Nasi Tumpang</h3>
+
+<p class="price">
+Rp.9000
+</p>
+
+<button onclick="addCart('Nasi Tumpang',9000)">
+Tambah
+</button>
+
+<button onclick="buyNow('Nasi Tumpang',9000)">
+Beli
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="img/nasipecel.png">
+
+<h3>Nasi Pecel</h3>
+
+<p class="price">
+Rp.11.000
+</p>
+
+<button onclick="addCart('Nasi Pecel',11000)">
+Tambah
+</button>
+
+<button onclick="buyNow('Nasi Pecel',11000)">
+Beli
+</button>
+
+</div>
+
+</div>
+
+<div id="cart">
+
+    
+<h2>Keranjang</h2>
+
+
+
+<div id="cartItems">
+
+Belum ada produk
+
+</div>
+
+<div class="cart-total">
+
+Total :
+
+Rp<span id="totalHarga">0</span>
+
+</div>
+
+<button onclick="checkoutWA()">
+    Checkout
+
+</button>
+
+
+
+</div>
+
+
+
+
+</section>
+
+<div style="text-align:center;margin:50px;">
+
+<a href="minuman.html">
+
+<button>
+
+Lanjut Menu Minuman →
+
+</button>
+
+</a>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
